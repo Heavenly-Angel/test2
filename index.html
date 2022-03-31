@@ -9,9 +9,9 @@
 const xmlhttp = new XMLHttpRequest();
 xmlhttp.onload = function() {
   const myObj = JSON.parse(this.responseText);
-  document.getElementById("demo").innerHTML = myObj.age;
+  document.getElementById("demo").innerHTML = myObj.DeviceFriendlyName;
 }
-xmlhttp.open("GET", "json_demo.json");
+xmlhttp.open("GET", "GetReadings.json");
 xmlhttp.send();
 </script>
 
