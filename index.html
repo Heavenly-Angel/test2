@@ -11,7 +11,7 @@ xmlhttp.onload = function() {
   const myObj = JSON.parse(this.responseText);
   document.getElementById("demo").innerHTML = myObj.age;
 }
-xmlhttp.open("GET", "json_demo.txt");
+xmlhttp.open("GET", "json_demo.json");
 xmlhttp.send();
 </script>
 
